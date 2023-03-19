@@ -19,7 +19,6 @@ body {
   /* background-color: white; */
   max-width: 64rem;
   margin: 0 auto;
-  width: 100%;
 
   /* border: 0.1em red solid; */
 }
@@ -115,7 +114,7 @@ ul {
 }
 
 .menu a:hover {
-  animation: scales 500ms ease backwards;
+  animation: scales 500ms ease forwards;
   color: #68C46C;
 }
 
@@ -186,7 +185,6 @@ main {
   overflow-x: auto;
   scroll-snap-type: proximity;
   scroll-snap-align: center;
-
   padding: 0 0 0 0;
   margin: 2em 0 0 0;
   border-radius: 1rem;
@@ -255,7 +253,7 @@ main {
 }
 
 .pre:hover, .nxt:hover {
-  animation: scale 400ms ease backwards;
+  animation: scale 400ms ease forwards;
 }
 
 .nav {
@@ -279,7 +277,7 @@ main {
 }
 
 .dots:hover {
-  animation: scales 400ms ease backwards;
+  animation: scales 400ms ease forwards;
 }
 
 .slide_img {
@@ -327,10 +325,9 @@ button {
 }
 
 button:hover {
-  animation: scales 400ms ease backwards;
+  animation: scales 400ms ease forwards;
   /* filter: drop-shadow(0 0 0.2rem #28782B); */
-  filter: drop-shadow(0 0 0.1rem white); 
-  
+  filter: drop-shadow(0 0 0.1rem white);
 }
 
 @keyframes scales {
