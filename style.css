@@ -114,7 +114,7 @@ ul {
 }
 
 .menu a:hover {
-  animation: scales 500ms ease forwards;
+  animation: scales 500ms ease backwards;
   color: #68C46C;
 }
 
@@ -253,7 +253,7 @@ main {
 }
 
 .pre:hover, .nxt:hover {
-  animation: scale 400ms ease forwards;
+  animation: scale 400ms ease backwards;
 }
 
 .nav {
@@ -277,7 +277,7 @@ main {
 }
 
 .dots:hover {
-  animation: scales 400ms ease forwards;
+  animation: scales 400ms ease backwards;
 }
 
 .slide_img {
@@ -325,7 +325,7 @@ button {
 }
 
 button:hover {
-  animation: scales 400ms ease forwards;
+  animation: scales 400ms ease backwards;
   /* filter: drop-shadow(0 0 0.2rem #28782B); */
   filter: drop-shadow(0 0 0.1rem white);
 }
