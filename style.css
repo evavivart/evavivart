@@ -383,6 +383,12 @@ button:hover {
   }
 }
 
+@media (min-heigth: 700px) {
+  .container {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+}
 
 /* @media (min-width: 700px) {
   html {
