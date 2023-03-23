@@ -148,6 +148,11 @@ main {
   /* border: 0.1em red solid; */
 }
 
+p {
+  margin: 0;
+  padding: 1.5rem;
+}
+
 #galeria {
   display: flex;
   flex-direction: column;
@@ -383,12 +388,13 @@ button:hover {
   }
 }
 
-@media (min-heigth: 700px) {
+@media (min-heigth: 300px) {
   .container {
     width: 50%;
     padding-bottom: 50%;
   }
 }
+
 
 /* @media (min-width: 700px) {
   html {
