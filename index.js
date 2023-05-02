@@ -1,3 +1,4 @@
+// SOUNDS ON HOVER
 var audioDo = document.getElementById("notado") 
 var audioRe = document.getElementById("notare")
 var audioMi = document.getElementById("notami")
@@ -11,7 +12,6 @@ var audioPiano = document.getElementById("piano")
 function playSomDo(){
   audioDo.play();
 }
-
 function playSomRe(){
  audioRe.play();
 }
@@ -43,3 +43,24 @@ function TesteJS(){
 }
 
 audioPiano.volume = 0.1;
+
+// NIGHT MODE
+
+const nightModeToggle = document.querySelector('#night-mode-toggle');
+const body = document.querySelector('main');
+const NIGHT_MODE_KEY = 'nightModeEnabled';
+
+// Check if night mode was enabled in a previous session
+const isNightModeEnabled = localStorage.getItem(NIGHT_MODE_KEY) === 'true';
+if (isNightModeEnabled) {
+  body.classList.add('night-mode');
+}
+
+// Toggle night mode on button click
+nightModeToggle.addEventListener('click', () => {
+  body.classList.toggle('night-mode');
+  
+  // Store the night mode state
+  const isNightModeEnabled = body.classList.contains('night-mode');
+  localStorage.setItem(NIGHT_MODE_KEY, isNightModeEnabled);
+});
