@@ -9,13 +9,16 @@
     <style>
     </style>
   
-  <meta charset="UTF-8">
-  <meta name="viewport" 
+    <meta charset="UTF-8">
+    <meta name="viewport" 
     content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,600&display=swap" 
     rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> 
   </head>
   
   <body>
@@ -26,6 +29,7 @@
         <a href="https://www.instagram.com/eva.vivart/" target="_blank">
         <img id="evalogo" src="images/eva.png" alt="eva logo"
       width="100px"></a>
+        <button id="night-mode-toggle"><img src="./images/sumoon.png" width="50em" height="50em" alt=""></button>
     </div>
   
     <div class="tittle">
@@ -45,6 +49,8 @@
           <li>Galeria</li></a>
         <a href="#calendario">
           <li>Eventos</li></a>
+        <a href="#">
+          <li>Jogos musicais</li></a>
         <!-- <a href=#contatos>
           <li>Contatos</li></a> -->
       </ul>
@@ -92,15 +98,31 @@
 
       <div id="depoimentos">
         <h3>DEPOIMENTOS</h3> <!-- DAR UMA ATENÇÃO AQUI. COMO VAI SER? -->
-        <p>presença da música na vida dos seres humanos é incontestável. Ela tem
-          acompanhado a história da humanidade, ao longo dos tempos, exercendo as mais
-          diferentes funções. Está presente em todas as regiões do globo, em todas as
-          culturas, em todas as épocas, ou seja, a música é uma linguagem universal, que
-          ultrapassa as barreiras do tempo e do espaço. E, particularmente nos tempos atuais,
-          deve ser vista como uma das importantes formas de comunicação e ferramenta para
-          o desenvolvimento da aprendizagem em sala de aula, buscando integrar o processo
-          de crescimento da criança ao conhecimento de forma lúdica e criativa
-        </p>
+        <div class="swiper-ratio">
+          <div class="swiper-box">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><p .class="depo">"Eu fico muito feliz em ver como a musicalização tem ajudado meu filho a se desenvolver tanto. Ele aprendeu a tocar piano e violão e isso tem ajudado na coordenação motora e na concentração dele. Além disso, a alegria que ele sente quando toca um instrumento é algo indescritível." - Ana, mãe de um aluno de musicalização.</p></div>
+                
+                <div class="swiper-slide"><p .class="depo">"A musicalização tem sido uma das melhores experiências para o meu filho. Ele tem 7 anos e começou a frequentar as aulas de canto há alguns meses. Desde então, tem se mostrado mais confiante e feliz, além de ter melhorado a pronúncia e a dicção." - Carla, mãe de um aluno de canto.</p></div>
+                
+                <div class="swiper-slide"><p .class="depo">"Minha filha sempre teve dificuldade para se concentrar e focar em uma atividade por muito tempo, mas desde que começou a frequentar as aulas de musicalização, tem mostrado uma melhora significativa nesse aspecto. Além disso, ela adora cantar e tocar instrumentos e isso tem sido uma fonte de alegria e diversão para ela." - Joana, mãe de uma aluna de musicalização.</p></div>
+                
+                <div class="swiper-slide"><p .class="depo">"A música tem um papel muito importante na formação do meu filho. Além de desenvolver habilidades musicais, ele também tem aprendido a trabalhar em grupo, a ouvir e respeitar os outros e a se expressar de maneira criativa. Estamos muito satisfeitos com os resultados da musicalização." - Luis, pai de um aluno de música.</p></div>
+                
+                <div class="swiper-slide"><p .class="depo">"Nós sempre incentivamos a música em nossa casa, mas desde que nossa filha começou a frequentar as aulas de musicalização, ela tem evoluído muito. Ela tem aprendido a tocar instrumentos e também a compor suas próprias músicas. Isso tem ajudado a aumentar a autoestima e a criatividade dela." - Mariana, mãe de uma aluna de musicalização.</p></div>
+                
+                <div class="swiper-slide"><p .class="depo">."A musicalização tem sido um complemento muito importante para a educação do meu filho. Além de aprender sobre música, ele tem aprendido a trabalhar em equipe, a ter disciplina e a ser mais responsável. Estamos muito felizes com os resultados." - Rafael, pai de um aluno de musicalização.</p></div>
+                
+                <div class="swiper-slide"><p .class="depo">"Minha filha sempre gostou de música, mas desde que começou a frequentar as aulas de musicalização, tem se mostrado ainda mais apaixonada. Ela tem aprendido a tocar vários instrumentos e isso tem ajudado a desenvolver a coordenação motora e a criatividade dela." - Renata, mãe de uma aluna de musicalização.</p></div>
+                
+                <div class="swiper-slide"><p .class="depo">"Eu sempre soube que a música era importante, mas não imaginava o quanto. Desde que meu filho começou a frequentar as aulas de musicalização, tem mostrado uma evolução incrível, tanto em termos de habilidades musicais quanto no desenvolvimento emocional e social." - Rodrigo, pai de um aluno de música.</p></div>
+                
+                <div class="swiper-slide"><p .class="depo">"A musicalização tem sido uma das melhores coisas que aconteceram na vida do meu filho. Ele tem aprendido a tocar instrumentos e a cantar, mas também tem aprendido sobre respeito, empatia e trabalho em equipe. Estamos muito felizes com os resultados." - Sandra, mãe de uma aluna de musicalização.</p></div>
+              </div>
+            </div>  
+          </div>  
+        </div>
         <!-- <img id=aulamusica2 src="images/aulamusica.jpg" alt="aula de musica"> -->
       </div>
 
@@ -222,7 +244,7 @@
             width="30em" style="border-radius: 0.5em;"></a>
         </button>
         
-        <button>
+        <button id="goup">
           <a href=#>
             <img id="uparrow" src="images/uparrow.png" alt="uparrow"
             width="30em" style="border-radius: 0.5em;"></a>
@@ -231,6 +253,18 @@
     </footer>
     
     <script src="index.js"></script>
+      
+  <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
+
 
 </body>
 </html> 
