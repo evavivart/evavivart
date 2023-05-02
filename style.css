@@ -408,7 +408,7 @@ button:hover {
 /* swiper ratio */
  
 .swiper-ratio {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -630,7 +630,27 @@ border: 1px solid rgba(255, 255, 255, .25);
     align-items: center;
     position: static;
   }
-}
+
+  .swiper-ratio {
+    width: 80%;
+    padding-top: 0; /* 67.5%; 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+   
+  #swiper-box {
+    width: 80%;
+    height: 80%;
+  } 
+  
+  /* swiper css */
+  
+  .swiper {
+    width: 20em;
+    height: 18em;
+  }
+
+  .swiper-slide {
+    font-size: 0.9em;
+  }
 
 @media (max-width: 250px) {
   .contatos {
@@ -639,4 +659,5 @@ border: 1px solid rgba(255, 255, 255, .25);
     align-items: center;
     max-width: 1024px;
   }
+}
 }
