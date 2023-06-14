@@ -46,7 +46,7 @@ audioPiano.volume = 0.1;
 
 // NIGHT MODE
 
-const nightModeToggle = document.querySelector('#night-mode-toggle');
+const nightModeToggle = document.querySelector('#nightmode');
 const body = document.querySelector('main');
 const NIGHT_MODE_KEY = 'nightModeEnabled';
 
@@ -64,3 +64,12 @@ nightModeToggle.addEventListener('click', () => {
   const isNightModeEnabled = body.classList.contains('night-mode');
   localStorage.setItem(NIGHT_MODE_KEY, isNightModeEnabled);
 });
+
+// progress bar 
+gsap.registerPlugin(ScrollTrigger);
+gsap.to('progress', {
+  value: 100,
+  ease: 'none',
+  scrollTrigger: { scrub: 0.3 }
+});
+
