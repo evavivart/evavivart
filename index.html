@@ -17,19 +17,27 @@
     rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <!-- swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
   </head>
   
   <body>
     
-    
+    <!-- <progress max="100" value="0"></progress> -->
+
     <header>
       <div class="logo">
         <a href="https://www.instagram.com/eva.vivart/" target="_blank">
         <img id="evalogo" src="images/eva.png" alt="eva logo"
       width="100px"></a>
-        <button id="night-mode-toggle"><img src="./images/sumoon.png" width="50em" height="50em" alt=""></button>
+        <input type="checkbox" id="nightmode">
+        <label class="btn" for="nightmode"><!--<button id="night-mode-toggle">--><img src="./images/sumoon.png" width="50em" height="50em" alt=""><!--</button>--></label>
     </div>
   
     <div class="tittle">
@@ -50,7 +58,7 @@
         <a href="#calendario">
           <li>Eventos</li></a>
         <a href="#">
-          <li>Jogos musicais</li></a>
+        <!-- <li>Jogos musicais</li></a> -->
         <!-- <a href=#contatos>
           <li>Contatos</li></a> -->
       </ul>
@@ -78,7 +86,7 @@
               como a pronúncia, a entonação e a fluência verbal.<br>
               <span class="musica" id="la" style="color:#FF7F00" onmouseover="playSomLa()">A música</span> pode ajudar a melhorar o desempenho em outras áreas de estudo, 
               como matemática e ciências.<br>
-              <span class="musica" idid="si" style="color:#FF0000" onmouseover="playSomSi()">A música</span> pode ajudar a estimular a imaginação e a criatividade das crianças, 
+              <span class="musica" id="si" style="color:#FF0000" onmouseover="playSomSi()">A música</span> pode ajudar a estimular a imaginação e a criatividade das crianças, 
               permitindo-lhes experimentar e explorar novas ideias.<br>
               <span class="musica" id="do" style="color:#9400D3" onmouseover="playSomDoOitava()">A música</span> pode ajudar a promover a autoestima e a confiança das crianças, 
               permitindo-lhes experimentar e expressar sua própria individualidade.<br>
@@ -211,34 +219,34 @@
     <footer>
       <div class="contatos">
           
-          <button>
+          <button class="button">
             <a href=tel:+351911933750>
               <img id="fone" src="images/fone.png" alt="telefone"
               width="30em" style="border-radius: 0.5em;"></a></a>
           </button>
 
-          <button>
+          <button class="button">
           <a href="mailto:espacodevivenciasartisticaseva@gmail.com">
             <img id="mail" src="images/mail.png" alt="email"
             width="30em" style="border-radius: 0.5em;"></a>
           </a>
         </button>
 
-        <button>
+        <button class="button">
           <a href="https://wa.me/+351911933750" target="_blank">
             <img id="whatsapp" src="images/whats.png" alt="whatsapp"
             width="30em" style="border-radius: 0.5em;"></a>
           </a>
         </button>
 
-        <button>
+        <button class="button">
           <a href="https://www.instagram.com/eva.vivart/" target="_blank">
             <img id="instagram" src="images/insta.png" alt="instagram"
             width="30em" style="border-radius: 0.5em;"></a>
           </a>
         </button>
 
-        <button>
+        <button class="button">
           <a href="https://goo.gl/maps/1ij5cUE1PqubWGgg6" target="_blank">
             <img id="maps" src="images/maps.png" alt="google maps"
             width="30em" style="border-radius: 0.5em;"></a>
@@ -264,6 +272,9 @@
         grabCursor: true,
       });
     </script>
+  <!-- progress bar gsap -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script> -->
 
 
 </body>
