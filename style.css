@@ -29,18 +29,22 @@ body {
 }
 
 main.night-mode {
-  background-color: #133814;
+  background-color: #1d2c1e;
   color: #fff;
 }
 
-#night-mode-toggle {
+#nightmode {
+  display: none;
+}
+
+.btn {
   position: fixed;
   top: 0;
   right: 0;
   padding: 1em;
   z-index: 9999;
-  animation: none;
   filter: none;
+  transform-style: preserve-3d;
 }
 
 :root {
@@ -365,7 +369,7 @@ p {
   border-radius: 1rem;
 }
 
-button {
+.button {
   /* padding: 0.01rem;
   border-radius: 0.05rem; */
   border: transparent;
@@ -374,7 +378,23 @@ button {
   background-color: transparent;
 }
 
-button:hover {
+#goup {
+  /* padding: 0.01rem;
+  border-radius: 0.05rem; */
+  border: transparent;
+  text-align: center;
+  font-weight: bolder;
+  background-color: transparent;
+}
+
+/* #night-mode-toggle {
+  border: transparent;
+  text-align: center;
+  font-weight: bolder;
+  background-color: transparent;
+} */
+
+.button:hover {
   animation: scales 400ms ease-in-out forwards;
   /* filter: drop-shadow(0 0 0.2rem #28782B); */
   filter: drop-shadow(0 0 0.1rem white);
@@ -408,7 +428,6 @@ button:hover {
 /* swiper ratio */
  
 .swiper-ratio {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -570,6 +589,49 @@ border: 1px solid rgba(255, 255, 255, .25);
     width: 100%;
   } */
 
+#nightmode:checked + label > img {
+  animation: night forwards;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}  
+
+/* progress bar gsap */
+
+/* progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 0.2em;
+  border: none;
+  background: transparent;
+  z-index: 9999;
+}
+progress::-webkit-progress-bar {
+  background: transparent;
+}
+progress::-webkit-progress-value {
+  background: linear-gradient(to left, #db38b5,#01b3e3,#25ce7b,#fdc741,#ff6b01,#fc4236);
+  background-attachment: fixed;
+}
+progress::-moz-progress-bar {
+  background: linear-gradient(to left, #db38b5,#01b3e3,#25ce7b,#fdc741,#ff6b01,#fc4236);
+  background-attachment: fixed;
+}
+
+body {
+  background: linear-gradient(to bottom,
+    desaturate(lighten(#db38b5, 30%), 30%),
+    desaturate(lighten(#01b3e3, 30%), 30%),
+    desaturate(lighten(#25ce7b, 30%), 30%),
+    desaturate(lighten(#fdc741, 30%), 30%),
+    desaturate(lighten(#ff6b01, 30%), 30%),
+    desaturate(lighten(#fc4236, 30%), 30%)
+  );
+} */
+
+
 /* keyframes */
 
 @keyframes uparrow {
@@ -596,6 +658,16 @@ border: 1px solid rgba(255, 255, 255, .25);
   }
   100% {
     transform: scale(1.1);
+  }
+}
+
+@keyframes night {
+  0% {
+    transform:rotateY(0deg)
+  }
+
+  100% {
+    transform: rotateY(180deg);
   }
 }
 
