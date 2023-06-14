@@ -353,6 +353,7 @@ p {
 .contatos {
   display: flex;
   flex-direction: row;
+  align-content: center;
   justify-content: space-around;
   align-items: baseline;
   z-index: 2;
