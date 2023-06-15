@@ -139,7 +139,7 @@ ul {
 }
 
 .menu a:hover {
-  animation: scales 400ms ease-in-out forwards;
+  /* animation: scales 400ms ease-in-out forwards; */
   color: #68C46C;
 }
 
@@ -396,13 +396,14 @@ p {
 } */
 
 .button:hover {
-  animation: scales 400ms ease-in-out forwards;
+  /* animation: scales 400ms ease-in-out forwards; */
   /* filter: drop-shadow(0 0 0.2rem #28782B); */
-  filter: drop-shadow(0 0 0.1rem white);
+  filter: drop-shadow(0 0 0.2rem white);
 }
 
 #goup:hover {
-  animation: uparrow 700ms ease infinite forwards;
+  /* animation: uparrow 700ms ease infinite forwards; */
+  filter: drop-shadow(0 0 0.2rem white);
 }
 
 /* Aspect Ratio */
